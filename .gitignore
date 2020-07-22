@@ -1,0 +1,15 @@
+#Files
+composer.json
+composer.lock
+composer.phar
+
+# Dependency directories
+node_modules/
+jspm_packages/
+vendor/
+
+# Project images
+images/
+
+# Configuration server
+.htacess

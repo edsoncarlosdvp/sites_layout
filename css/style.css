@@ -1,0 +1,1757 @@
+/* FONTS */
+@font-face {
+   font-family: 'DinLight'; /* o nome usado na folha de estilos para usar a fonte, pode ser outro */
+   src: url('../fonts/din-light.eot'); /* Para o IE 9 */
+   src: url('../fonts/din-light.eot?#iefix') format('embedded-opentype'), /*IE 8 e inferior */
+   url('../fonts/din-light.otf'),
+   url('../fonts/din-light.woff') format('woff'), /* navegadores modernos */
+   url('../fonts/din-light.svg#PacificoRegular') format('svg'); /* dispositivos móveis */
+   }
+
+@font-face {
+   font-family: 'CandaraBold'; /* o nome usado na folha de estilos para usar a fonte, pode ser outro */
+   src: url('../fonts/candara-bold.eot'); /* Para o IE 9 */
+   src: url('../fonts/candara-bold.eot?#iefix') format('embedded-opentype'), /*IE 8 e inferior */
+   url('../fonts/candara-bold.ttf') format('truetype'), /* Safari, Android */
+   url('../fonts/candara-bold.woff') format('woff'), /* navegadores modernos */
+   url('../fonts/candara-bold.svg#PacificoRegular') format('svg'); /* dispositivos móveis */
+   }
+
+   @font-face {
+      font-family: 'Calibri'; /* o nome usado na folha de estilos para usar a fonte, pode ser outro */
+      src: url('../fonts/calibrii.ttf') format('truetype'), /* Safari, Android */
+   }
+
+   /* .lembrar{
+      color: #37b7bf;
+      color: #247479;
+   } */
+
+   input, textarea{
+      color: #303030 !important;
+      background-color: #e2e2e2 !important;
+      border-radius: 0px !important;
+      border: 1px solid #afafaf !important;
+      resize: none;
+   }
+
+   /* TEXTOS */
+   ::-webkit-input-placeholder  { color:#303030 !important; }
+   input:-moz-placeholder { color:#303030 !important; }
+   textarea:-moz-placeholder { color:#303030 !important; }​
+
+   .title-service{
+      font-size: 22pt;
+      font-weight: 500;
+      text-shadow: 1px 1px 1px #000000;
+   }
+
+   .title{
+      font-size: 22pt;
+      font-weight: 500;
+   }
+
+   .title-footer{
+      font-size: 14pt;
+      font-weight: 500;
+      text-decoration: underline;
+   }
+
+   .sub-title{
+      width: 100%;
+      text-align: center;
+      font-size: 16pt;
+   }
+
+   .text{
+      font-size: 13pt;
+      font-weight: 500;
+   }
+
+   p{
+      text-indent: 50px;
+      font-size: 14pt;
+      font-weight: 500;
+      text-align: justify;
+   }
+
+   /* LINKS */
+   
+   a{
+      text-decoration: none;
+      color: inherit;
+   }
+
+   .cor-link01{
+      text-decoration: none !important;
+      color: #ffffff !important;
+   }
+
+   .cor-link02{
+      text-decoration: none !important;
+      color: #303030 !important;
+   }
+
+   #navbarsite .nav-link{
+      position: relative;
+      color: inherit;
+      text-decoration: none !important;
+   }
+
+   #navbarsite .nav-link:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 11px;
+      left: 0;
+      background-color: #303030;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    #navbarsite .nav-link:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      text-decoration: none !important;
+    }
+
+    .nav-link02{
+       color: #303030;
+       padding: .5rem 1rem;
+    }
+
+    .nav-link02:hover{
+      color: #303030;
+   }
+
+   .nav-link-tel{
+      color: #303030;
+      font-size: inherit;
+      text-decoration: none !important;
+      transition: all 0.3s ease-out 0s !important;
+   }
+
+   .nav-link-tel:hover{
+      font-size: 13pt !important;
+      text-decoration: none !important;
+      transition: all 0.3s ease-in 0s !important;
+   }
+
+   .eni-link{
+      color: #ffffff !important; /*#303030 !important; */
+      padding: 0px 20px;
+      font-size: 15pt;
+   }
+
+   .eni-link:hover:focus{
+      color: #ffffff !important;
+      background-color: transparent !important;
+      border-radius: 0px !important;
+      text-decoration: none !important;
+   }
+
+   .link-unset-style{
+      color: unset !important;
+      text-decoration: none !important;
+   }
+
+   /* DROPDOWN ITEM */
+   .dropdown-menu{
+      padding: 0px !important;
+      border: 1px solid #b1b1b1 !important;
+   }
+
+   .dropdown-item:focus, .dropdown-item:hover{
+      color: #ffffff !important;
+      background-color: #b1b1b1 !important;
+   }
+
+   .fix-dropdown{
+      margin-top: 19px !important;
+      border-top: none !important;
+      border-top-left-radius: 0px !important;
+      border-top-right-radius: 0px !important;
+   }
+
+   canvas{
+      display: none !important;
+      top: 1500px !important;
+   }
+
+   p, body, span, input, textarea, select, button{
+      font-family: 'DinLight', Arial, Helvetica, sans-serif !important;
+      /* font-size: 16pt !important; */
+   }
+
+   body{
+      /* overflow-x: hidden; ATIVAR QUANDO O SITE ESTIVER PRONTO */
+      /* margin-top: -162px; */
+      background-color: #f5f5f5 !important;
+      overflow-x: hidden;
+   }
+
+   /* SCROLL BODY */
+   .theme-scroll::-webkit-scrollbar-track {
+      width: 6px;
+      height: 6px;
+      background-color: #b1b1b1;
+      overflow-y: auto; 
+      overflow-x: hidden;
+   }
+   .theme-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+      background: #303030;
+      overflow-y: auto; 
+      overflow-x: hidden;
+   }
+   .theme-scroll::-webkit-scrollbar-thumb {
+      width: 6px;
+      height: 6px;
+      background: #303030;
+      overflow-y: auto; 
+      overflow-x: hidden;
+   }
+
+   /* BACKGROUNDS COLOR */
+   .eni-bg-menu{
+      color: #525252;
+      background-color: #f9f9f9;
+      box-shadow: 0px 2px 5px #303030;
+      transition: ease;
+      transition-duration: 1s;
+   }
+
+   .eni-bg-menu-nostyle{
+      color: transparent;
+      background-color: transparent;
+      box-shadow: none;
+   }
+
+   .eni-bg-01{
+      color: #151515;
+      background-color: #ffffff !important;
+   }
+
+   .eni-bg-02{
+      color: #e2e2e2;
+      background-color: #303030;
+   }
+
+   .eni-bg-03{
+   color           : #303030;
+   background-color: #cccccc;
+   }
+
+   .eni-bg-05{
+      background-color: #e0e0e0/*#c5c5c5*/;
+   }
+
+   #home{
+      z-index: 99;
+      margin-top: -3.4%;/* 6% SE O CAROUSEL FOR COM VIDEOS */
+   }
+
+   /* HEADER */
+   #menutop{
+      z-index: 999;
+   }
+
+   #navbarsite .fa{
+      font-size: 5pt !important;
+   }
+
+   .navbar-toggler-icon{
+      background-image: url('../images/png/menu-icon.png') !important;
+   }
+
+   .nav-item>.nav-link{
+      color: inherit !important;
+   }
+
+   .nav-pills{
+      background-color: transparent !important;
+      border-radius: 0px !important;
+   }
+
+   .nav-pills>.nav-item>.eni-link:hover{
+      color: inherit !important;
+      background-color: transparent !important;
+      border-radius: 0px !important;
+      border-bottom: 1px solid #ffffff;
+      -webkit-transition: all 0.1s ease-out 0s;
+      transition: all 0.1s ease-out 0s;
+   } 
+
+   .nav-pills :focus{
+      color: inherit !important;
+      background-color: transparent !important;
+      border-radius: 0px !important;
+      border-bottom: 2px solid #ffffff;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+   }
+
+   .principal{
+      width: auto;
+      background-color: #e2e2e2;
+   }
+
+   .bg-img{
+      width: 250px;
+      background-color: #e2e2e2;
+   }
+
+   /* EMPRESA */
+   .img-cover{
+      object-fit: cover !important; 
+      object-position: center !important;
+   }
+
+   .triangulo{
+    width: 60px;
+    height: 60px;
+    border-color: transparent #99f #99f transparent;
+    border-width: 60px;
+    z-index: 5;
+   }
+
+  .no-effect{
+   -webkit-transform: skew(-15deg);
+   -moz-transform: skew(-15deg);
+   -ms-transform: skew(-15deg);
+   -o-transform: skew(-15deg);
+   transform: skew(-15deg);
+   position: absolute;
+   text-align: right;
+   /* margin-top: 30px; */
+   padding-right: 15px;
+   z-index: 9;
+  }
+
+  .no-effect-p{
+   -webkit-transform: skew(0deg);
+   -moz-transform: skew(0deg);
+   -ms-transform: skew(0deg);
+   -o-transform: skew(0deg);
+   transform: skew(0deg);
+   position: absolute;
+   text-align: justify;
+   margin-top: 60px;
+   padding-right: 15px;
+   z-index: 9;
+   width: 60%;
+  }
+
+  .paralelogramo{
+   width: 45%;
+   height: 90vh;
+   background-color: #ffffff !important;
+   -webkit-transform: skew(15deg);
+   -moz-transform: skew(15deg);
+   -ms-transform: skew(15deg);
+   -o-transform: skew(15deg);
+   transform: skew(15deg);
+   z-index: 5;
+  }
+
+  .retangulo{
+   background-color: #ffffff !important;
+   margin-left: -90px;
+   flex: 0 0 100%;
+   max-width: 25%;
+   z-index: 5;
+  }
+
+  .bg-foto{
+     background: url('../images/empresa02.jpg') no-repeat;
+     background-position: left;
+     background-size: auto 100%;
+     position: absolute;
+     height: 90vh;
+     width: 50%;
+     z-index: 2;
+  }
+
+  .bg-foto-mobile{
+   background: url('../images/empresa02.jpg') no-repeat;
+   background-position: center;
+   max-width: 100%;
+   height: 27vh;
+   }
+
+   .capa-title{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+   }
+
+   .capa-bg-title{
+      background-color: #000000;
+      width: 100%;
+      height: 100%;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";       /* IE 8 */
+      filter: alpha(opacity=65);  /* IE 5-7 */
+      -moz-opacity: 0.65;          /* Netscape */
+      -khtml-opacity: 0.65;        /* Safari 1.x */
+      opacity: 0.65;               /* Good browsers */
+   }
+
+   .personal-height{
+      height: 100vh;
+   }
+
+   .min-vh-50{
+      min-height: 50vh !important;
+   }
+
+   .min-vh-90{
+      min-height: 90vh !important;
+   }
+
+   /* SOBRE */
+   .capa-title{
+      font-size: 21pt;
+      font-weight: 500;
+   }
+
+   .eni-icon-sobre{
+      display: block;
+      width: 100%;
+      margin: 15px 0px;
+      font-size: 80pt;
+      font-weight: 500;
+   }
+
+   .eni-text-icon-sobre{
+      font-size: 15pt;
+      font-weight: 500;
+      /* text-shadow: 0px 1px 1px #000000; */
+   }
+
+   #redes-sociais-top-md a>i{
+      text-decoration: none !important;
+      font-size: 12pt;
+   }
+
+   #redes-sociais-top-md a>i:hover{      
+      font-size: 18pt !important;
+      transition: all 0.3s ease-in-out 0s;
+   }
+   
+   #redes-sociais-hide{
+      margin-left: -110px !important;
+   }
+
+   #redes-sociais-hide a>i{
+      text-decoration: none !important;
+      font-size: 12pt;
+   }
+
+   #redes-sociais-hide a>i{
+      font-size: 16pt !important;
+      transition: all 0.3s ease-in-out 0s;
+   }
+
+   hr{
+      border-top: 1px solid #afafaf !important;
+   }
+
+   /* #carouselTopIndex{
+      min-height: 100vh;
+   } */
+
+   /* CAROUSEL */
+   div#carouselTopIndex .carousel { height: 100vh !important; /*calc(100vh - 56px)*/}
+   div#carouselTopIndex .carousel-inner, .carousel-item { height: 100vh !important;/* 100vh se for usar imagens e auto para vídeos*/}
+   div#carouselTopIndex .carousel-caption {bottom: -315px;}
+   div#carouselTopIndex .carousel-item { background-color: #000;}
+   div#carouselTopIndex .carousel-item img { height: 100vh; object-fit: cover; object-position: center;}
+
+   div#cTestimonyInner .carousel-inner, .carousel-item{
+      height: 50vh !important;
+      background-color: #ffffff !important;
+   }
+
+   div#cTestimonyInner > .text{
+      font-style: italic;
+   }
+
+   .aspas-1{
+      display: block;
+      float: left;
+      transform: rotate(180deg);
+      width: 4%;
+      height: auto !important;
+      filter: contrast(0.01);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+}
+
+   .aspas-2{
+      display: block;
+      float: right;
+      width: 4%;
+      height: auto !important;
+      filter: contrast(0.01);
+   }
+
+   #carouselMaintence{
+      height: 77vh !important;
+   }
+   div#carouselMaintence .carousel-item, .carousel-inner{
+      height: 75vh !important;
+   }
+
+   #carouselConservation{
+      height: 77vh !important;
+   }
+   div#carouselConservation .carousel-item, .carousel-inner{
+      height: 75vh !important;
+   }
+
+   #carouselCleaning{
+      height: 77vh !important;
+   }
+   div#carouselCleaning .carousel-item, .carousel-inner{
+      height: 75vh !important;
+   }
+
+   #carouselJanitorial{
+      height: 77vh !important;
+   }
+   div#carouselJanitorial .carousel-item, .carousel-inner{
+      height: 75vh !important;
+   }
+
+   #carouselCrr{
+      height: 77vh !important;
+   }
+   div#carouselCrr .carousel-item, .carousel-inner{
+      height: 75vh !important;
+   }
+
+   .carousel-bg-img{
+      max-width: 100%;
+      height: 75vh;
+      object-fit: cover;
+      object-position: center;
+   }
+
+   .carousel-control-prev-icon, .carousel-control-next-icon {
+      filter: brightness(0.05) !important;
+  }
+
+  .vh-40{
+     height: 40% !important;
+  }
+
+   .vh-50{
+      height: 50vh !important;
+   }
+
+   #carouseltestimony .title .sub-title{
+      color: #000000;
+   }
+
+   .carousel-inner-servicos{
+      height: 80vh !important;
+   }
+
+   .carousel-item-servicos{
+      height: 80vh !important;
+   }
+
+   /* CARD */
+   #container-card{
+      background-color: #b1b1b1;
+   }
+   #container-card a{
+      display: none !important;
+   }
+
+   #container-card a.card-link{
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      width: 45%;
+      margin: auto;
+      padding: 0;
+   }
+
+   #container-card a.card-link2{
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      width: 10%;
+      margin: auto;
+      color: #ffffff;
+   }
+
+   #container-card .fa-facebook-square {
+      font-size: 22pt;
+   }
+
+   #container-card .fa-instagram{
+      font-size: 25pt;
+   }
+
+  .card-header {
+   padding: .75rem 1.25rem !important;
+   margin-bottom: 0 !important;
+   background-color: transparent !important;
+   border-bottom: transparent !important;
+   border: transparent !important;
+   }
+
+   .card {
+      position: relative;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #303030 !important;
+      background-clip: border-box;
+      border: 3px double #ffffff !important;
+      border-radius: 0px !important;
+  }
+
+   .card-body {
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1.25rem;
+  }
+
+   .card-footer {
+      padding: .75rem 1.25rem;
+      background-color: transparent !important;
+      border-top: transparent !important;
+      border: transparent !important;
+   }
+
+   .card-text:last-child{
+      padding-top: 20px !important;
+   }
+
+  .card-link{
+     color: #333333 !important;
+     cursor: pointer;
+  }
+
+  .eni-btn-card{
+      color: #303030 !important;
+      background-color: #ffffff !important;
+      border: 3px double #303030 !important;
+      border-radius: 5px !important;
+      padding-top: 5px !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      height: 45px;
+      cursor: pointer;
+   }
+
+   .eni-btn-card:hover{
+      color: #ffffff !important;
+      background-color: #303030b0 !important;
+      border: 3px double #ffffff !important;
+      padding: 5px 25px !important;
+      -webkit-transition: all 0.1s ease-out 0s;
+      transition: all 0.1s ease-out 0s;
+   }
+
+   .eni-btn-card-close{
+      color: #ffffff !important;
+      background-color: #303030 !important; /*#1a9ca0*/
+      border: 3px double #eeeeee !important;
+      padding: 5px 25px !important;
+      border-radius: 5px !important;
+      padding-top: 5px !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      height: 45px;
+      cursor: pointer;
+   }
+
+   .eni-btn-card-close:hover{
+      color: #ffffff !important;
+      background-color: #303030b0 !important;
+      border: 3px double #ffffff !important;
+      padding: 5px 25px !important;
+      -webkit-transition: all 0.1s ease-out 0s;
+      transition: all 0.1s ease-out 0s;
+   }
+
+  .vh-90{
+     min-height: 90vh;
+  }
+
+   /* SEÇÃO SERVIÇOS */
+   .eni-service {
+      font-size: 48pt;
+      text-shadow: 1px 1px 1px #000000;
+      border: 2px solid #a1a1a1;
+      border-radius: 0px;
+      min-height: calc(100vh - 160px);
+   }
+
+   .thumb-service{
+      max-width: 100% !important;
+      height: 77vh !important;
+      object-fit: cover;
+      object-position: center;
+   }
+
+   #no-card ul>li>a.eni-link:hover {
+      color: inherit !important;
+      background-color: transparent !important;
+      border-radius: 0px !important;
+      border-bottom: none;
+      -webkit-transition: all 0.1s ease-out 0s;
+      transition: all 0.1s ease-out 0s;
+  }
+
+  #maintenance .carousel-inner{
+     height: auto;
+  }
+
+   .title-service{
+      display: block !important;
+      margin-bottom: 7px !important;
+      font-size: 18pt !important;
+      font-weight: 500;
+      text-shadow: 1px 1px 1px #000000;
+   }
+
+   .title-outsourcing{
+      font-size: 19pt;
+      font-weight: 500;
+   }
+
+   .eni-icon-sobre{
+      font-size: 47pt;
+   }
+
+   .eni-text-icon-sobre{
+      font-size: 14pt;
+   }
+
+   .subtitle-service{
+      display: block !important;
+      margin-bottom: 5px !important;
+      font-size: 16pt !important;
+      font-weight: 500;
+   }
+
+   .text-descricao-service{
+      display: block !important;
+      margin-bottom: 7px !important;
+      font-size: 14pt !important;
+      font-weight: 500;
+   }
+
+   /* TERCEIRIZAÇÃO */
+   #terceirizacao .img-graph{
+      width: 45%;
+   }
+
+   /* LOCALIZAÇÃO */
+   .mapa{
+      height: 66vh !important;
+   }
+
+   /* CONTATO */
+   .border-contact-form{
+      border-right: 2px solid #303030;
+   }
+
+   .eni-btn-contato{
+      color: #303030 !important;
+      background-color: #ffffff !important;
+      border: 3px double #303030 !important;
+      border-radius: 5px !important;
+      padding-top: 5px !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      /*color: #303030 !important;
+      background-color: #ffffff !important;
+      border-color: #303030 !important;
+      border: 3px double #ffffff !important;
+       */   :;
+      -webkit-border-radius: 5px !important;
+      -moz-border-radius: 5px !important;
+      -ms-border-radius: 5px !important;
+      -o-border-radius: 5px !important;
+}
+
+   .eni-btn-contato:hover{
+      border: 3px double #303030 !important;
+      color: #ffffff !important;
+      background-color: #303030 !important;
+      -webkit-transition: all 0.2s ease-out 0s;
+      transition: all 0.2s ease-out 0s;
+   }
+
+   .eni-btn-see-plus{
+      color: #ffffff !important;
+      background-color: #303030b0 !important;
+      border: 3px double #ffffff !important;
+      border-radius: 5px !important;
+      padding-top: 5px !important;
+      padding-left: 23px !important;
+      padding-right: 23px !important;
+      height: 45px;
+   }
+
+   .eni-btn-see-plus:hover{
+      color: #303030b0 !important;
+      background-color: #ffffff !important;
+      border: 3px double #303030b0 !important;
+      -webkit-transition: all 0.1s ease-out 0s;
+      transition: all 0.1s ease-out 0s;
+   }
+
+   #div-links-contato a, span{
+      font-size: 16pt;
+   }
+
+   /* TRABALHE CONOSCO (MODAL)*/
+   .modal-trabalhe-conosco{
+      max-width: 800px !important;
+   }
+
+   .title{
+      font-size: 18pt;
+      font-weight: 500;
+   }
+
+   .sub-title{
+      width: 100%;
+      text-align: center;
+      font-size: 14pt;
+   }
+
+   .title-capa{
+      font-size: 14pt !important;
+      font-weight: 500;
+   }
+
+   /* TESTES COM H1 */
+   div.animateline{
+      position: relative;
+      text-decoration: none;  
+   }
+
+   div.animateline{
+      content: "";
+      position: inherit;
+      display: inline-table;
+      width: 7%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #303030;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+      animation-name: tix;
+      animation-delay: 1s;
+      animation-duration: 2.7s;
+      
+    }
+
+    #anima-curriculo{
+    width: 15%;
+    top: 44px;
+    position: absolute;
+    left: 43%;
+   }
+
+    #anima-terc{
+      width: 5%;
+   }
+
+    #anima-portfolio{
+      width: 5.5%;
+   }
+
+   #anima-orcamento{
+      width: 3%;
+      background-color: #ffffff;
+   }
+
+    #anima-sobre{
+      width: 8%;
+   }
+
+   #anima-video{
+      width: 2%;
+      background-color: #ffffff;
+   }
+
+    #anima-contato{
+       width: 10%;
+       margin-top: -6px;
+       background-color: #ffffff;
+    }
+
+    #anima-parceiro{
+      width: 3%;
+   }
+
+    @keyframes tix{
+      from {visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); background-color: transparent;}
+      to {visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1);}
+    }
+
+
+   /* PORTFOLIO*/
+   .eni-img-thumb{
+      max-width: 100%;
+      width: 340px;
+      height: 242px;
+      object-fit: cover;
+      object-position: center;
+      border: 5px solid #ffffff;
+      border-radius: 5px;
+   }
+
+   .eni-img-thumb:hover{
+      border: 5px solid #303030;
+      transition: linear;
+      transform-origin: top, left, bottom;
+      transition-duration: 0.7s;
+   }
+
+   img.eni-img-thumb:hover{
+      opacity: 0.8;
+      transition-duration: 0.7s;
+   }
+
+   .eni-bg-caption{
+      background-color: #00000065;
+   }
+
+   .carousel-caption{
+      right: 0px !important;
+      left: 0px !important;
+   }
+
+   /* PARCEIROS */
+   #msParceiros a{
+      display: none !important;
+      visibility: hidden !important;
+   }
+
+   #msParceiros{
+      height: 20vh !important;
+      z-index: 100;
+   }
+
+   #msParceiros img{
+      height: 16vh !important;
+   }
+
+   /* FOOTER */
+   #footer{
+      background-color: #151515 !important;
+      border-top: 2px solid #303030;
+   }
+
+   .logo-footer{
+      width: 23%;
+      border-radius: 73px;
+   }
+   #footer .title{
+      width: 100%;
+      text-align: inherit;
+      font-size: 14pt;
+      font-weight: 500;
+   }
+
+   #footer .sub-title{
+      width: 100%;
+      text-align: inherit;
+      font-size: 13pt;
+   }
+   
+   #footer .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-linkedin{
+      font-size: 22pt;
+   }
+
+   .fix-div{
+      width: 100%;
+      position: fixed;
+      text-align: right;
+      bottom: 55px;
+      z-index: 10;
+      background-color: transparent;
+   }
+
+   .logo-zap{
+      width: 50px;
+      border-radius: 45%;
+      -webkit-border-radius: 45%;
+      -moz-border-radius: 45%;
+      -ms-border-radius: 45%;
+      -o-border-radius: 45%;
+      margin-right: 5px;
+}
+
+   .input-text-nl{
+      width: 75%;
+   }
+
+   .btn-nl-assinar{
+      color: #ffffff !important;
+      background-color: #303030 !important;
+      border: 3px double #b1b1b1 !important;
+      padding: 0px 19px !important;
+   }
+   
+    .btn-nl-assinar:hover{
+      color: #ffffff !important;
+      background-color: #999999 !important;
+      border: 3px double #454545 !important;
+      padding: 0px 19px !important;
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s;
+   }
+
+   .text-end{
+      font-size: 12pt;
+      font-weight: 500;
+   }
+
+   .text-copy{
+      font-size: 10pt;
+      font-weight: 500;
+   }
+
+   #footer-copy{
+      background-color: #303030 !important;
+   }
+
+   .visiblev{
+      display: none !important;
+   }
+
+   /* PAGES ADICIONAIS */
+      /* PORTFOLIO */
+   .style-select{
+      font-size: 16pt !important;
+      font-weight: 500 !important;
+      border-radius: 0px !important;
+      border: 1px solid #303030 !important;
+   }
+
+   #capa-portfolio{
+      width: 80%;
+      height: 440px;
+      background-image: url(../images/capa-portfolio.png);
+      background-position: center;
+      background-size: cover;
+      margin-top: 90px;
+   }
+
+   .title-capa{
+      color: #9bbcbd;
+      font-size: 22pt !important;
+      font-weight: 500 !important;
+   }
+
+   #content-select .nav-link{
+      background-color: #ffffff !important;
+      color: #000000 !important;
+      padding: 5px 45px !important;
+   }
+
+   #content-select .dropdown-menu{
+      font-size: 16pt !important;
+      font-weight: 500 !important;
+      border-radius: 0px !important;
+      padding: 5px 9px !important;
+      margin-top: 0px;
+   }
+
+   .option{
+      color: #000000 !important;
+      background-color: #ffffff !important;
+   }
+   
+   .option:hover{
+      color: #ffffff !important;
+      background-color: #303030 !important;
+   }
+
+   @media (max-width: 1400px){
+      .eni-img-thumb {
+         max-width: 100%;
+         width: 295px;
+         height: 235px;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+      }
+
+      .thumb-service{
+      max-width: 100% !important;
+      height: 77vh !important;
+      object-fit: cover;
+      object-position: center;
+      }
+
+      .title-service{
+      display: block !important;
+      margin-bottom: 7px !important;
+      font-size: 16pt !important;
+      font-weight: 500;
+      text-shadow: 1px 1px 1px #000000;
+      }
+
+      .subtitle-service{
+      display: block !important;
+      margin-bottom: 5px !important;
+      font-size: 14pt !important;
+      font-weight: 500;
+      }
+
+      .text-descricao-service{
+      display: block !important;
+      margin-bottom: 7px !important;
+      text-indent: 25px;
+      font-size: 12pt !important;
+      font-weight: 500;
+      }
+
+      #capa-portfolio{
+         width: 92%;
+         height: 440px;
+         background-image: url(../images/capa-portfolio.png);
+         background-position: center;
+         background-size: cover;
+      }
+   }
+
+   @media (max-width: 1368px){
+      .eni-img-thumb {
+         max-width: 100%;
+         width: 295px;
+         height: 232px;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+     }
+
+     .thumb-service{
+      max-width: 100% !important;
+      height: 77vh !important;
+      object-fit: cover;
+      object-position: center;
+      }
+
+      .title-service{
+      display: block !important;
+      margin-bottom: 7px !important;
+      font-size: 15pt !important;
+      font-weight: 500;
+      text-shadow: 1px 1px 1px #000000;
+      }
+
+      .subtitle-service{
+      display: block !important;
+      margin-bottom: 5px !important;
+      font-size: 13pt !important;
+      font-weight: 500;
+      }
+
+      .text-descricao-service{
+      display: block !important;
+      margin-bottom: 7px !important;
+      font-size: 11pt !important;
+      font-weight: 500;
+      }
+   }
+
+   @media (max-width: 1260px){
+      #capa-portfolio{
+         width: 98%;
+         height: 440px;
+         background-image: url(../images/capa-portfolio.png);
+         background-position: center;
+         background-size: cover;
+      }
+   }
+
+   @media (max-width: 1199px){
+      .title-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 16pt !important;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #000000;
+      }
+   
+      .subtitle-service{
+         display: block !important;
+         margin-bottom: 5px !important;
+         font-size: 14pt !important;
+         font-weight: 500;
+      }
+   
+      .text-descricao-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 12pt !important;
+         font-weight: 500;
+      }
+
+      .title{
+         font-size: 18pt;
+         font-weight: 500;
+      }
+
+      .sub-title{
+         width: 100%;
+         text-align: center;
+         font-size: 13pt;
+      }
+
+      p{
+         text-indent: 50px;
+         font-size: 12pt;
+         font-weight: 500;
+         text-align: justify;
+      }
+
+      .thumb-service{
+         max-width: 100% !important;
+         height: 77vh !important;
+         object-fit: cover;
+         object-position: center;
+      }
+
+      .title-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 14pt !important;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #000000;
+      }
+
+      .subtitle-service{
+         display: block !important;
+         margin-bottom: 5px !important;
+         font-size: 12pt !important;
+         font-weight: 500;
+      }
+
+      .text-descricao-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 11pt !important;
+         font-weight: 500;
+      }
+      #capa-portfolio{
+         width: 98%;
+         height: 410px;
+         background-image: url(../images/capa-portfolio.png);
+         background-position: center;
+         background-size: cover;
+      }
+   }
+
+   @media (max-width: 1100px){
+      #capa-portfolio{
+         width: 98%;
+         height: 440px;
+         background-image: url(../images/capa-portfolio.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: 98% auto;
+         margin-top: 35px;
+      }
+   }
+
+   @media (max-width: 992px){
+      #home{
+         z-index: 99;
+         margin-top: -20.1%/*-5.2%;*/
+         /* -20.1% se for utilizar imagem */
+      }
+
+      .title-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 16pt !important;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #000000;
+      }
+   
+      .subtitle-service{
+         display: block !important;
+         margin-bottom: 5px !important;
+         font-size: 14pt !important;
+         font-weight: 500;
+      }
+   
+      .text-descricao-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 12pt !important;
+         font-weight: 500;
+      }
+
+      .title{
+         font-size: 18pt;
+         font-weight: 500;
+      }
+
+      .title-outsourcing{
+         font-size: 16pt;
+         font-weight: 500;
+      }
+
+      .title-footer{
+         font-size: 13pt;
+      }
+
+      .sub-title{
+         width: 100%;
+         text-align: center;
+         font-size: 11pt;
+      }
+
+      p{
+         text-indent: 50px;
+         font-size: 11pt;
+         font-weight: 500;
+         text-align: justify;
+      }
+
+      .thumb-service{
+         max-width: 100% !important;
+         height: 77vh !important;
+         object-fit: cover;
+         object-position: center;
+      }
+
+      .title-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 14pt !important;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #000000;
+      }
+
+      .subtitle-service{
+         display: block !important;
+         margin-bottom: 5px !important;
+         font-size: 12pt !important;
+         font-weight: 500;
+      }
+
+      .text-descricao-service{
+         display: block !important;
+         margin-bottom: 7px !important;
+         font-size: 11pt !important;
+         font-weight: 500;
+      }
+
+      .eni-img-thumb {
+         max-width: 100%;
+         width: 295px;
+         height: 225px;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+      }
+
+      .eni-link{
+         font-size: 12pt;
+      }
+
+      .nav-link{
+         font-size: 12pt;
+         padding: 3px 10px !important;
+      }
+
+      #navbarsite .nav-link{
+         position: relative;
+         color: inherit;
+         text-decoration: none !important;
+      }
+   
+      #navbarsite .nav-link:before {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 2px;
+         bottom: 11px;
+         left: 0;
+         background-color: transparent;
+         visibility: hidden;
+         -webkit-transform: scaleX(0);
+         transform: scaleX(0);
+         -webkit-transition: all 0.3s ease-in-out 0s;
+         transition: all 0.3s ease-in-out 0s;
+       }
+   
+       #navbarsite .nav-link:hover:before {
+         visibility: visible;
+         -webkit-transform: scaleX(1);
+         transform: scaleX(1);
+         text-decoration: none !important;
+       }
+
+      #redes-sociais-hide a>i{
+         font-size: 20pt !important;
+      }
+
+      .eni-icon-sobre{
+         font-size: 47pt;
+      }
+
+      .eni-text-icon-sobre{
+         font-size: 12pt;
+      }
+
+   }
+
+   @media (max-width: 768px){
+      .center-md-rede{
+         font-size: 12pt;
+         margin-left: -90px;
+      }
+
+      #terceirizacao .img-graph{
+         width: 75%;
+      }
+
+      .eni-img-thumb {
+         max-width: 100%;
+         width: 315px;
+         height: 245px;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+         -webkit-border-radius: 5px;
+         -moz-border-radius: 5px;
+         -ms-border-radius: 5px;
+         -o-border-radius: 5px;
+      }
+
+      #div-links-contato a, span{
+         font-size: 13pt;
+      }
+
+      .title-service{
+         font-size: 14pt;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #000000;
+      }
+
+      .title{
+         font-size: 14pt;
+         font-weight: 500;
+      }
+
+      .sub-title{
+         width: 100%;
+         text-align: center;
+         font-size: 10pt;
+      }
+
+      p{
+         text-indent: 50px;
+         font-size: 11pt;
+         font-weight: 500;
+         text-align: justify;
+      }
+
+      /* CARD */
+      
+      .card-title{
+         color: #ffffff !important;
+         font-size: 15pt !important;
+         font-weight: 500 !important;         
+      }
+      
+      .card-text{
+         color: #ffffff !important;
+         font-size: 12pt !important;
+         font-weight: 500 !important;         
+         line-height: 15px;
+      }
+
+      .card-text-footer{
+         color: #ffffff !important;
+         font-size: 10pt !important;
+         font-weight: 500 !important;         
+      }
+
+      .card-img-top{
+         max-width: 100% !important;
+         width: 451px !important;
+         height: 250px !important;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+         
+      }
+
+      .nav-link{
+         font-size: 13pt;
+         padding: 0px 10px !important;
+      }
+
+      #redes-sociais-hide a>i{
+         font-size: 17pt !important;
+      }
+
+      /* CONTATO */
+      .border-contact-form {
+         border-right: none;
+      }
+
+      /* LOCALIZAÇÃO */
+      .mapa {
+         height: 40vh !important;
+      }
+
+      /* SOBRE */
+      .eni-icon-sobre {
+         font-size: 32pt;
+      }
+
+      /* PARCEIROS */
+      #msParceiros{
+         height: 16vh !important;
+         z-index: 100;
+      }
+
+      /* FOOTER */
+      .logo-footer{
+         width: 24%;
+         border-radius: 73px;
+      }
+
+      .personal-height{
+         height: fit-content;
+      }
+   }
+
+   @media (max-width: 576px){
+      .center-md-rede{
+         font-size: 12pt;
+         margin-left: -90px;
+      }
+
+      /* CARD */
+      .card-title{
+         color: #ffffff !important;
+         font-size: 15pt !important;
+         font-weight: 500 !important;         
+      }
+      
+      .card-text{
+         color: #ffffff !important;
+         font-size: 12pt !important;
+         font-weight: 500 !important;         
+         line-height: 15px;
+      }
+
+      .card-text-footer{
+         color: #ffffff !important;
+         font-size: 10pt !important;
+         font-weight: 500 !important;         
+      }
+
+      #terceirizacao .img-graph{
+         width: 80%;
+      }
+
+      #terceirizacao .eni-icon-sobre{
+         font-size: 40pt;
+      }
+
+      #terceirizacao .eni-text-icon-sobre{
+         font-size: 13pt;
+         font-weight: 500;
+      }
+
+      .eni-icon-sobre{
+         font-size: 40pt;
+      }
+
+      .eni-text-icon-sobre{
+         font-size: 13pt;
+         font-weight: 500;
+      }
+
+      .nav-link{
+         font-size: 13pt;
+         padding: 0px 13px !important;
+      }
+
+      #redes-sociais-hide a>i{
+         font-size: 17pt !important;
+      }
+
+      .title-service{
+         font-size: 16pt;
+         font-weight: 500;
+         text-shadow: 1px 1px 1px #000000;
+      }
+   
+      .title{
+         font-size: 16pt;
+         font-weight: 500;
+      }
+   
+      .sub-title{
+         width: 100%;
+         text-align: center;
+         font-size: 12pt;
+      }
+   
+      p{
+         text-indent: 50px;
+         font-size: 11pt;
+         font-weight: 500;
+         text-align: justify;
+      }
+
+      .eni-img-thumb {
+         max-width: 100%;
+         width: 485px;
+         height: 245px;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+     }
+
+     /* #div-links-contato a, span{
+      font-size: 13pt;
+      } */
+
+      /* PORTFOLIO*/
+      .eni-img-thumb{
+         max-width: 100%;
+         width: 340px;
+         height: 242px;
+         object-fit: cover;
+         object-position: center;
+         border: 5px solid #ffffff;
+         border-radius: 5px;
+      }
+
+      .eni-img-thumb:hover{
+         border: 5px solid #303030;
+         transition: linear;
+         transform-origin: top, left, bottom;
+         transition-duration: 0.7s;
+      }
+
+      img.eni-img-thumb:hover{
+         opacity: 0.8;
+         transition-duration: 0.7s;
+      }
+
+      .eni-bg-caption{
+         background-color: #00000065;
+      }
+
+      .carousel-caption{
+         right: 0px !important;
+         left: 0px !important;
+      }
+
+      /* SOBRE */
+      .tam-icon-contact {
+         width: 20%;
+      }
+
+      .eni-icon-sobre {
+         font-size  : 14pt;
+         font-weight: 500;
+      }
+
+      /* PARCEIROS */
+      #msParceiros a{
+         display: none !important;
+         visibility: hidden !important;
+      }
+
+      #msParceiros{
+         height: 15vh !important;
+         z-index: 100;
+      }
+
+      #msParceiros img{
+         height: auto !important;
+      }
+
+      /* FOOTER */
+      #footer .sub-title{
+         width: 100%;
+         text-align: inherit;
+         font-size: 13pt;
+      }
+      #footer .fa-facebook-f, .fa-instagram, .fa-youtube, .fa-linkedin{
+         font-size: 15pt;
+      }
+
+      .text-end{
+         font-size: 12pt;
+         font-weight: 500;
+      }
+
+      .text-copy{
+         font-size: 9pt;
+         font-weight: 500;
+      }
+   }
+
+   @media (max-width: 450px){
+      .nav-link{
+         font-size: 12pt;
+         padding: 0px 10px !important;
+      }
+
+      #redes-sociais-hide a>i{
+         font-size: 14pt !important;
+      }
+
+      .tam-icon-contact{
+         width: 20%;
+      }
+
+      .eni-icon-sobre{
+         font-size: 14pt;
+         font-weight: 500;
+      }
+
+      /* FOOTER */
+      .logo-footer{
+         width: 19%;
+         border-radius: 73px;
+      }
+   }
